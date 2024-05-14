@@ -20,7 +20,7 @@ int main()
     cout << "Uninitialized variable c: " << c << endl;
 
     int d = 10;
-    while (d >= 1)
+    while (d >= 0)
     {
         cout << "d: " << d << endl;
         d--;
