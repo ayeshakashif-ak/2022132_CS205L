@@ -1,5 +1,11 @@
-FROM nginx
+FROM python:3
 
-COPY ./RecipeBook /usr/share/ngnix/html
+WORKDIR /usr/src/app
 
-EXPOSE 80
+COPY requirements.txt ./
+
+COPY . .
+
+EXPOSE 5000
+
+CMD [ "python", "./server.py" ]
